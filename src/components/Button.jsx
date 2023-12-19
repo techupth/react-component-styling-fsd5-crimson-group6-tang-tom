@@ -1,3 +1,17 @@
-// Start coding here
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 
-function Button() {}
+// Start coding here
+function Button(props) {
+  return (
+    <button
+      type="submit"
+      css={css`
+        background-color: ${props.buttonColor};
+      `}
+    >
+      Button
+    </button>
+  );
+}
+export default Button;
